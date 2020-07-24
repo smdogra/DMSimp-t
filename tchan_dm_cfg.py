@@ -11,10 +11,10 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     PythiaParameters = cms.PSet(
         pythia8CommonSettingsBlock,
         pythia8CP5SettingsBlock,
-        #pythia8PSweightsSettingsBlock,
+        pythia8PSweightsSettingsBlock,
         parameterSets = cms.vstring('pythia8CommonSettings',
                                     'pythia8CP5Settings',
-                                    #'pythia8PSweightsSettings'
+                                    'pythia8PSweightsSettings'
                                     )
     )
 )
