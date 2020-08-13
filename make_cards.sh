@@ -18,7 +18,7 @@ do
 	cp $CARDDIR/extramodels.dat $DIR1/${CARDNAME1}_extramodels.dat
 	cp $CARDDIR/run_card.dat $DIR1/${CARDNAME1}_run_card.dat
 	sed -e "s/_MMED_/$MMED/" -e "s/_MDM_/$MDM/" -e "s/_LAMB_/$lamb1p0/" -e "s/_WIDTH_/AUTO/"  $CARDDIR/customizecards.dat > $DIR1/${CARDNAME1}_customizecards.dat
-	sed "s/_NAME_/$CARDNAME/" $CARDDIR/proc_card1.dat > $DIR1/${CARDNAME1}_proc_card.dat
+	sed "s/_NAME_/$CARDNAME1/" $CARDDIR/proc_card1.dat > $DIR1/${CARDNAME1}_proc_card.dat
 
 
 	############# Process Name p p > Y Y, Y > X j	
@@ -29,7 +29,7 @@ do
 	cp $CARDDIR/extramodels.dat $DIR2/${CARDNAME2}_extramodels.dat
 	cp $CARDDIR/run_card.dat $DIR2/${CARDNAME2}_run_card.dat
 	sed -e "s/_MMED_/$MMED/" -e "s/_MDM_/$MDM/" -e "s/_LAMB_/$lamb1p0/" -e "s/_WIDTH_/AUTO/"  $CARDDIR/customizecards.dat > $DIR2/${CARDNAME2}_customizecards.dat
-	sed "s/_NAME_/$CARDNAME/" $CARDDIR/proc_card2.dat > $DIR2/${CARDNAME2}_proc_card.dat
+	sed "s/_NAME_/$CARDNAME2/" $CARDDIR/proc_card2.dat > $DIR2/${CARDNAME2}_proc_card.dat
 
     done
 done
