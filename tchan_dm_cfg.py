@@ -28,4 +28,6 @@ LHEDmPtSumFilter = cms.EDFilter("LHEPtFilter",
   src=cms.InputTag("externalLHEProducer")
 )
 
-ProductionFilterSequence = cms.Sequence(LHEDmPtSumFilter * generator)
+ProductionFilterSequence = cms.Sequence(generator * LHEDmPtSumFilter)
+
+
